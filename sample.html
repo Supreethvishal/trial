@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/Users/Supreeth/Downloads/Trial/css/style.css">>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/Users/Supreeth/Downloads/Trial/js/index.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+  <form name="frmUser" method="post" action="">
+<div class="message"><?php if($message!="") { echo $message; } ?></div>
+<table border="0" cellpadding="10" cellspacing="1" width="500" align="center" class="tblLogin">
+  <tr class="tableheader">
+  <td align="center" colspan="2">Enter Login Details</td>
+  </tr>
+  <tr class="tablerow">
+  <td>
+  <input type="text" name="userName" placeholder="User Name" class="login-input"></td>
+  </tr>
+  <tr class="tablerow">
+  <td>
+  <input type="password" name="password" placeholder="Password" class="login-input"></td>
+  </tr>
+  <tr class="tableheader">
+  <td align="center" colspan="2"><input type="submit" name="submit" value="Submit" class="btnSubmit"></td>
+  </tr>
+</table>
+
+
+</form>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDFomC4ibz_HjA_7xs-iEchSury68Q5pJI",
+      authDomain: "trial-4add0.firebaseapp.com",
+      databaseURL: "https://trial-4add0.firebaseio.com",
+      projectId: "trial-4add0",
+      storageBucket: "",
+      messagingSenderId: "800880608437"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</body>
+
+
+</html>
